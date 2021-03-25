@@ -214,21 +214,43 @@ namespace TestForGAZIT
         }
         private void DeltoolStripButton_Click(object sender, EventArgs e)
         {
-            var sqlCmd = db.CreateCommand();
-            sqlCmd.CommandText = "DELETE from Users WHERE id = '" + dgUsers.SelectedRows[0].Cells["id"].Value + "';";
-            try
+            DialogResult dialogResult = MessageBox.Show("Вы уверены, что хотите удалить эту запись?", "Подтверждение удаления", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                if (Connect_db())
+                var sqlCmd = db.CreateCommand();
+                sqlCmd.CommandText = "DELETE from Users WHERE id = '" + dgUsers.SelectedRows[0].Cells["id"].Value + "';";
+                try
                 {
-                    sqlCmd.ExecuteNonQuery();
-                    db.Close();
+                    if (Connect_db())
+                    {
+                        sqlCmd.ExecuteNonQuery();
+                        db.Close();
+                    }
                 }
+                catch (SQLiteException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                FillUserListByDiv();
             }
-            catch (SQLiteException ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            FillUserListByDiv();
+        }
+
+        private void RefStreets_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("В разработке :)");
+        }
+
+        private void RefCities_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("В разработке :)");
+        }
+        private void RefPosts_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("В разработке :)");
+        }
+        private void RefDivisions_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("В разработке :)");
         }
     }
 }

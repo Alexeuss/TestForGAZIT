@@ -140,14 +140,14 @@ namespace TestForGAZIT
             // 
             this.dtpBirthDate.Location = new System.Drawing.Point(117, 227);
             this.dtpBirthDate.Name = "dtpBirthDate";
-            this.dtpBirthDate.Size = new System.Drawing.Size(204, 23);
+            this.dtpBirthDate.Size = new System.Drawing.Size(246, 23);
             this.dtpBirthDate.TabIndex = 8;
             // 
             // tbLastName
             // 
             this.tbLastName.Location = new System.Drawing.Point(117, 25);
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(204, 23);
+            this.tbLastName.Size = new System.Drawing.Size(246, 23);
             this.tbLastName.TabIndex = 9;
             this.tbLastName.TextChanged += new System.EventHandler(this.tbLastName_TextChanged);
             // 
@@ -155,7 +155,7 @@ namespace TestForGAZIT
             // 
             this.tbFirstName.Location = new System.Drawing.Point(117, 54);
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(204, 23);
+            this.tbFirstName.Size = new System.Drawing.Size(246, 23);
             this.tbFirstName.TabIndex = 10;
             this.tbFirstName.TextChanged += new System.EventHandler(this.tbFirstName_TextChanged);
             // 
@@ -163,7 +163,7 @@ namespace TestForGAZIT
             // 
             this.tbSecondName.Location = new System.Drawing.Point(117, 83);
             this.tbSecondName.Name = "tbSecondName";
-            this.tbSecondName.Size = new System.Drawing.Size(204, 23);
+            this.tbSecondName.Size = new System.Drawing.Size(246, 23);
             this.tbSecondName.TabIndex = 11;
             this.tbSecondName.TextChanged += new System.EventHandler(this.tbSecondName_TextChanged);
             // 
@@ -172,7 +172,7 @@ namespace TestForGAZIT
             this.tbFullName.Location = new System.Drawing.Point(117, 112);
             this.tbFullName.Name = "tbFullName";
             this.tbFullName.ReadOnly = true;
-            this.tbFullName.Size = new System.Drawing.Size(204, 23);
+            this.tbFullName.Size = new System.Drawing.Size(246, 23);
             this.tbFullName.TabIndex = 12;
             // 
             // mtbPhone
@@ -180,7 +180,7 @@ namespace TestForGAZIT
             this.mtbPhone.Location = new System.Drawing.Point(117, 198);
             this.mtbPhone.Mask = "(999) 000-0000";
             this.mtbPhone.Name = "mtbPhone";
-            this.mtbPhone.Size = new System.Drawing.Size(204, 23);
+            this.mtbPhone.Size = new System.Drawing.Size(246, 23);
             this.mtbPhone.TabIndex = 13;
             // 
             // tbChief
@@ -264,7 +264,7 @@ namespace TestForGAZIT
             // 
             this.bChPost.Location = new System.Drawing.Point(296, 141);
             this.bChPost.Name = "bChPost";
-            this.bChPost.Size = new System.Drawing.Size(25, 23);
+            this.bChPost.Size = new System.Drawing.Size(67, 23);
             this.bChPost.TabIndex = 22;
             this.bChPost.Text = "Выбрать";
             this.bChPost.UseVisualStyleBackColor = true;
@@ -274,7 +274,7 @@ namespace TestForGAZIT
             // 
             this.bChDivision.Location = new System.Drawing.Point(296, 169);
             this.bChDivision.Name = "bChDivision";
-            this.bChDivision.Size = new System.Drawing.Size(25, 23);
+            this.bChDivision.Size = new System.Drawing.Size(67, 23);
             this.bChDivision.TabIndex = 25;
             this.bChDivision.Text = "Выбрать";
             this.bChDivision.UseVisualStyleBackColor = true;
@@ -334,6 +334,7 @@ namespace TestForGAZIT
             this.bChAddress.TabIndex = 29;
             this.bChAddress.Text = "Указать";
             this.bChAddress.UseVisualStyleBackColor = true;
+            this.bChAddress.Click += new System.EventHandler(this.bChAddress_Click);
             // 
             // fEdform
             // 

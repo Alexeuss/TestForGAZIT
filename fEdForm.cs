@@ -356,6 +356,11 @@ namespace TestForGAZIT
             }
         }
 
+        private void bChAddress_Click(object sender, EventArgs e)
+        {
+            fEdAddressForm fEdAdrrForm = new fEdAddressForm();
+            DialogResult dialogResult = fEdAdrrForm.ShowDialog();
+        }
     }
 }
 
